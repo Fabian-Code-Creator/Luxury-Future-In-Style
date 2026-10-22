@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111210">
+  <meta name="description" content="Discover a considered collection of exceptional South African homes with LUXE ESTATES.">
+  <meta property="og:title" content="LUXE ESTATES | Where Extraordinary Living Begins">
+  <meta property="og:description" content="A considered collection of exceptional South African homes.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>LUXE ESTATES | Where Extraordinary Living Begins</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="properties.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-image" role="img" aria-label="Contemporary home surrounded by mature trees"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content wrap">
+        <p class="eyebrow hero-eyebrow">A considered collection of exceptional homes</p>
+        <h1 id="hero-title">Where extraordinary<br><em>living begins.</em></h1>
+        <p class="hero-copy">Discover exceptional homes crafted for those who expect nothing less than extraordinary.</p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="properties.html">Explore properties <span aria-hidden="true">↗</span></a>
+          <a class="button button-outline-light" href="#about">Discover our story</a>
+        </div>
+      </div>
+      <a class="scroll-note" href="#collection"><span class="scroll-line"></span> Scroll to explore</a>
+      <div class="hero-index"><span>01</span><span class="hero-index-rule"></span><span>06</span></div>
+    </section>
+
+    <section class="search-section" aria-label="Search properties">
+      <form class="search-panel wrap" data-search-form>
+        <label class="search-field"><span>Location</span><select name="location"><option value="">Anywhere</option></select></label>
+        <label class="search-field"><span>Property type</span><select name="type"><option value="">All residences</option></select></label>
+        <label class="search-field"><span>Price range</span><select name="price"><option value="">Any price</option><option value="0-10000000">Under R10m</option><option value="10000000-25000000">R10m – R25m</option><option value="25000000-50000000">R25m – R50m</option><option value="50000000-999999999">R50m+</option></select></label>
+        <label class="search-field"><span>Bedrooms</span><select name="bedrooms"><option value="">Any</option><option value="3">3+</option><option value="4">4+</option><option value="5">5+</option><option value="6">6+</option></select></label>
+        <button class="button button-dark search-submit" type="submit">Find a home <span aria-hidden="true">↗</span></button>
+      </form>
+    </section>
+
+    <section class="section collection-section" id="collection">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow">The collection</p><h2>Spaces that stay<br><em>with you.</em></h2></div>
+          <div class="heading-aside"><p>Each residence has its own point of view. Explore a selection chosen for its sense of place, thoughtful design and enduring character.</p><a class="text-link" href="properties.html">View all residences <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <div class="property-grid" id="featured-properties"></div>
+      </div>
+    </section>
+
+    <section class="signature-section">
+      <div class="signature-image"></div>
+      <div class="signature-copy">
+        <p class="eyebrow">The signature residence · Sandton</p>
+        <h2>A quieter kind<br>of <em>grandeur.</em></h2>
+        <p class="signature-description">An architectural study in light and proportion, set within a private garden in the heart of Sandton. Generous entertaining spaces meet considered details at every turn.</p>
+        <div class="signature-facts"><span>6 bedrooms</span><span>7 bathrooms</span><span>1,120 m²</span></div>
+        <a class="button button-gold" href="property.html?id=sandton-house">Discover this residence <span aria-hidden="true">↗</span></a>
+        <p class="demo-note">Demonstration property · details are illustrative</p>
+      </div>
+    </section>
+
+    <section class="section lifestyle-section">
+      <div class="wrap">
+        <div class="section-heading lifestyle-heading">
+          <div><p class="eyebrow">The art of living well</p><h2>More than a home.<br><em>A way of life.</em></h2></div>
+          <p class="heading-intro">The moments between the milestones. A morning swim, a long lunch, the last light falling across the room. This is a life shaped around what matters to you.</p>
+        </div>
+        <div class="lifestyle-grid">
+          <article class="lifestyle-tile lifestyle-large"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85" alt="Sculptural contemporary architecture opening onto the landscape" loading="lazy"><span>Architecture, in harmony</span></article>
+          <article class="lifestyle-tile"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85" alt="Warm, considered living space with natural materials" loading="lazy"><span>Rooms to retreat to</span></article>
+          <article class="lifestyle-tile"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85" alt="Refined interior with carefully selected finishes" loading="lazy"><span>Details that make a difference</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories-section">
+      <div class="wrap categories-layout">
+        <div><p class="eyebrow">Find your point of view</p><h2>Distinctive by<br><em>nature.</em></h2><p class="categories-intro">From city penthouses to coastal sanctuaries, explore the settings that speak to you.</p></div>
+        <div class="category-list">
+          <a href="properties.html?type=Mansion"><span>01</span><strong>Luxury mansions</strong><span class="category-arrow">↗</span></a>
+          <a href="properties.html?type=Villa"><span>02</span><strong>Modern villas</strong><span class="category-arrow">↗</span></a>
+          <a href="properties.html?type=Penthouse"><span>03</span><strong>Penthouses</strong><span class="category-arrow">↗</span></a>
+          <a href="properties.html?type=Waterfront"><span>04</span><strong>Waterfront homes</strong><span class="category-arrow">↗</span></a>
+          <a href="properties.html?type=Estate"><span>05</span><strong>Country estates</strong><span class="category-arrow">↗</span></a>
+          <a href="properties.html?type=Architectural"><span>06</span><strong>Architectural homes</strong><span class="category-arrow">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section approach-section" id="about">
+      <div class="wrap approach-layout">
+        <div class="approach-image"></div>
+        <div class="approach-copy"><p class="eyebrow">A more considered approach</p><h2>Property is personal.<br><em>We know it.</em></h2><p>Finding a home is about more than an address. It is about understanding how you want to live, and helping you find a place that feels unmistakably yours.</p><p>We bring a thoughtful perspective to every introduction, with a focus on exceptional homes across South Africa.</p><a href="#contact" class="text-link">Get to know us <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="values-section">
+      <div class="wrap">
+        <div class="values-heading"><p class="eyebrow">The LUXE perspective</p><h2>Good homes. <em>Good people.</em><br>A thoughtful process.</h2></div>
+        <div class="values-grid">
+          <article><span class="value-number">01</span><h3>Exceptional properties</h3><p>A considered selection of distinctive homes, chosen for their design, setting and character.</p></article>
+          <article><span class="value-number">02</span><h3>Personal attention</h3><p>A responsive, considered approach shaped around your priorities and pace.</p></article>
+          <article><span class="value-number">03</span><h3>Discreet introductions</h3><p>Explore opportunities with care, clarity and respect for your privacy.</p></article>
+          <article><span class="value-number">04</span><h3>Local perspective</h3><p>Thoughtful guidance to help you navigate the South African property landscape.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section" aria-labelledby="testimonial-title">
+      <div class="wrap testimonial-inner"><p class="eyebrow">A note from our clients</p><h2 id="testimonial-title">“A thoughtful process, from the first conversation to the moment we walked through the door.”</h2><p class="testimonial-byline">Demonstration testimonial · Sample content, not a verified client review</p><div class="testimonial-controls"><span>01 <span class="testimonial-rule"></span> 03</span><span aria-hidden="true">← &nbsp; →</span></div></div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="wrap contact-layout">
+        <div class="contact-copy"><p class="eyebrow">Begin a conversation</p><h2>Somewhere<br><em>to begin.</em></h2><p>Whether you are looking for your next home or considering a sale, tell us a little about what you have in mind.</p><div class="contact-detail"><span>Speak with our team</span><a href="mailto:hello@luxeestates.example">hello@luxeestates.example</a><small>Editable demonstration contact · replace before launch</small></div></div>
+        <form class="contact-form" data-demo-form>
+          <div class="form-row"><label>Full name<input name="name" autocomplete="name" required></label><label>Email address<input name="email" type="email" autocomplete="email" required></label></div>
+          <div class="form-row"><label>Phone number<input name="phone" type="tel" autocomplete="tel"></label><label>Property of interest<select name="interest"><option value="">Choose an option</option><option>Buying a home</option><option>Selling a home</option><option>Something else</option></select></label></div>
+          <label>Message<textarea name="message" rows="4" required></textarea></label>
+          <button class="button button-gold" type="submit">Send enquiry <span aria-hidden="true">↗</span></button>
+          <p class="form-feedback" aria-live="polite">This demonstration form does not send or store your information.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+</body>
+</html>

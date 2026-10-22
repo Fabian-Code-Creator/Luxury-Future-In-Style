@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111210">
+  <meta name="description" content="Explore distinctive mansions, villas, penthouses and waterfront homes across South Africa.">
+  <meta property="og:title" content="The Collection | LUXE ESTATES">
+  <meta property="og:description" content="Explore distinctive homes across South Africa.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>The Collection | LUXE ESTATES</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="properties.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body data-page="listings">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+  <main id="main">
+    <section class="page-intro"><div class="wrap"><p class="eyebrow">South Africa · The collection</p><h1>Find a place<br><em>to call your own.</em></h1><p>A considered collection of distinctive homes, each with its own sense of place.</p></div></section>
+    <section class="listing-section">
+      <div class="wrap">
+        <form class="listing-filters" data-listing-form>
+          <label><span>Location</span><select name="location"><option value="">All locations</option></select></label>
+          <label><span>Property type</span><select name="type"><option value="">All types</option></select></label>
+          <label><span>Price range</span><select name="price"><option value="">Any price</option><option value="0-10000000">Under R10m</option><option value="10000000-25000000">R10m – R25m</option><option value="25000000-50000000">R25m – R50m</option><option value="50000000-999999999">R50m+</option></select></label>
+          <label><span>Bedrooms</span><select name="bedrooms"><option value="">Any</option><option value="3">3+</option><option value="4">4+</option><option value="5">5+</option><option value="6">6+</option></select></label>
+          <label><span>Sort by</span><select name="sort"><option value="featured">Featured</option><option value="price-asc">Price: low to high</option><option value="price-desc">Price: high to low</option><option value="area-desc">Largest first</option></select></label>
+          <button class="button button-dark" type="submit">Apply filters</button>
+          <button class="clear-filters" type="reset">Clear filters</button>
+        </form>
+        <div class="listing-toolbar"><p id="listing-count" aria-live="polite"></p><div class="view-switch" aria-label="Property layout"><button type="button" data-view="grid" aria-pressed="true" aria-label="Grid view">▦</button><button type="button" data-view="list" aria-pressed="false" aria-label="List view">☰</button></div></div>
+        <div class="property-grid listing-grid" id="listing-properties"></div>
+        <div class="empty-state" id="empty-state" hidden><p class="eyebrow">No exact matches</p><h2>Let’s try another view.</h2><p>Adjust your filters to explore more of the collection.</p><button class="button button-dark" type="button" data-clear-empty>Clear filters</button></div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+</body>
+</html>
